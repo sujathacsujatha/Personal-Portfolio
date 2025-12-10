@@ -3,380 +3,155 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sujatha C — Software Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Back Button Top Left -->
-    <button class="back-btn" onclick="goBack()">← Back</button>
-
-    <!-- Header -->
-    <header class="site-header animate">
-        <div class="container header-inner">
-            <a class="brand" href="#home"><span class="brand-first">Sujatha</span> C</a>
-
-            <nav class="navbar" id="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <div class="right-controls">
-                <a class="cta" href="SUJATHAC_CV.pdf" download>Download Resume</a>
-                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-            </div>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="./photo.jpeg" alt="profile">
+            <h1 class="name">Sujatha C</h1>
+            <p class="title">Software Engineer</p>
         </div>
-    </header>
 
-    <!-- MAIN CONTENT -->
-    <main id="mainContent">
-        <!-- HERO -->
-        <section id="home" class="hero section animate">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    
-                    <h1 class="name">Sujatha <span class="accent">C</span></h1>
-                    <p class="role">Software Engineer — Java | Spring Boot | Microservices</p>
-                    <p class="lead">
-                        I am a Backend Engineer specializing in Spring Boot microservices, MySQL optimization, and
-                        secure REST APIs. I design scalable, high-performance, and maintainable backend systems,
-                        implement robust authentication and caching strategies, and ensure efficient database queries
-                        and smooth integration across distributed systems.
-                        </p>
+        <nav class="menu">
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
 
-                       <p> Passionate about clean code, test-driven development, and CI/CD workflows, I thrive in
-                        collaborative Agile teams, delivering reliable, impactful, and enterprise-ready backend
-                        solutions that scale seamlessly.
-                    </p>
+    <!-- Main Content -->
+    <main class="content">
 
-                    <div class="btns">
-                        <a class="btn btn-primary" href="#contact">Contact Me</a>
-                        <a class="btn btn-outline" href="#projects">View Projects</a>
-                    </div>
-                </div>
-
-                <div class="hero-photo">
-                    <img src="./photo.jpeg" alt="Sujatha C — Profile photo" class="profile-img animate-zoom">
-                </div>
-            </div>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Software Engineer specializing in Java backend development, Spring Boot,
+                REST APIs, Microservices, and MySQL. I have experience building scalable enterprise-level
+                backend systems, implementing secure architectures, and optimizing API performance.
+            </p>
+            <p>
+                I enjoy solving complex technical problems and continuously improving my skills in modern backend
+                technologies, system design, and clean architecture principles.
+            </p>
         </section>
 
-        <!-- ABOUT -->
-        <section id="about" class="section about animate">
-            <div class="container about-grid">
-                <div class="about-card">
-                    <h2 class="section-title">About <span>Me</span></h2>
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <h2>Resume</h2>
+
+            <h3>Experience</h3>
+
+            <div class="resume-card">
+                <h4>Software Engineer — VentureBiz Promotions Private Limited</h4>
+                <p><b>Nov 2025 – Present</b></p>
+                <ul>
+                    <li>Developing backend modules using Java, Spring Boot, Spring MVC, and REST APIs.</li>
+                    <li>Designed optimized MySQL tables, queries, and Hibernate/JPA entities.</li>
+                    <li>Built secure authentication and role-based access workflows using Spring Security.</li>
+                    <li>Improved API performance using query tuning and Redis caching.</li>
+                    <li>Implemented validations, exception handling, and JUnit/Mockito test cases.</li>
+                </ul>
+            </div>
+
+            <div class="resume-card">
+                <h4>Consulting Engineer (Apprenticeship) — Cisco Systems India</h4>
+                <p><b>Jan 2024 – Jan 2025</b></p>
+                <ul>
+                    <li>Developed Spring Boot microservices for lifecycle tracking and infrastructure migration.</li>
+                    <li>Built REST APIs for EOL/EOS validation, asset management, and audit automation.</li>
+                    <li>Implemented JPA/Hibernate CRUD operations, improving query performance.</li>
+                    <li>Integrated Git, Maven, Jenkins CI/CD & wrote JUnit test cases (80%+ coverage).</li>
+                </ul>
+            </div>
+
+            <h3>Education</h3>
+            <div class="resume-card">
+                <h4>HMS Institute of Technology, Tumkur</h4>
+                <p>Bachelor of Engineering | CGPA: 7.7 (2018 – 2022)</p>
+            </div>
+
+            <h3>Technical Skills</h3>
+            <ul class="skills">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring MVC</li>
+                <li>REST APIs</li>
+                <li>Hibernate/JPA</li>
+                <li>MySQL</li>
+                <li>Spring Security</li>
+                <li>Microservices</li>
+                <li>Git, GitHub, Maven</li>
+                <li>JUnit, Mockito</li>
+                <li>Redis (Basic)</li>
+                <li>Agile/Scrum</li>
+            </ul>
+
+            <h3>Strengths</h3>
+            <ul class="skills">
+                <li>Strong Problem-Solving</li>
+                <li>Analytical Thinking</li>
+                <li>Team Collaboration</li>
+                <li>Fast Learner</li>
+                <li>Clear Communication</li>
+            </ul>
+
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+
+            <div class="portfolio-grid">
+
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <h3>Goldman Sachs — IBLM Project</h3>
                     <p>
-                        I am a results-driven Software Engineer based in Bengaluru with a strong focus on building
-                        scalable, secure, and high-performance backend systems. Leveraging expertise in Java, Spring
-                        Boot, Microservices architecture, and database optimization (MySQL, Redis), I design and
-                        implement solutions that are both efficient and maintainable.</p>
-
-                       <p> I have contributed to high-impact enterprise projects, including the Goldman Sachs IBLM
-                        Automation Platform and Infrastructure Audit Automation Systems, where I developed robust
-                        microservices, optimized complex queries, and implemented CI/CD pipelines to ensure reliability
-                        and performance at scale. I excel at crafting clean, well-tested code with a focus on
-                        scalability, security, and operational excellence.</p>
-
-                       <p> Passionate about collaboration, problem-solving, and continuous learning, I thrive in Agile
-                        environments, actively participating in cross-functional teams, code reviews, and knowledge
-                        sharing. My goal is to create innovative backend solutions that drive business value, enhance
-                        user experience, and set new standards in software engineering.
+                        Developed microservices for automating lifecycle and compliance workflows.
+                        Improved API performance by 40% and implemented optimized database schemas.
                     </p>
-
-                    <ul class="about-list">
-                        <li><strong>Location:</strong> Bengaluru, Karnataka</li>
-                        <li><strong>Education:</strong> B.E., HMS Institute of Technology (Jul 2018 – Aug 2022)</li>
-                        <li><strong>Email:</strong> <a
-                                href="mailto:sujathacsujathac314@gmail.com">sujathacsujathac314@gmail.com</a></li>
-                        <li><strong>Phone:</strong> <a href="tel:+919090990909">+91 90909 90909</a></li>
-                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sujatha-c-a75ba425a"
-                                target="_blank">sujatha-c</a></li>
-                    </ul>
                 </div>
 
-                <div class="about-quick">
-                    <h3 class="mini-title">Quick facts</h3>
-
-                    <div class="fact">
-                        <span class="fact-title">Current Role</span>
-                        <span class="fact-value">Software Engineer — VentureBiz Promotions Pvt Ltd (Nov 2025 –
-                            Present)</span>
-                    </div>
-
-                    <div class="fact">
-                        <span class="fact-title">Prior</span>
-                        <span class="fact-value">Consulting Engineer (Apprenticeship) — Cisco Systems India (Jan 2024 –
-                            Jan 2025)</span>
-                    </div>
-
-                    <div class="fact">
-                        <span class="fact-title">Core</span>
-                        <span class="fact-value">Java, Spring Boot, Hibernate, MySQL, Redis, CI/CD</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills" class="section section-alt animate">
-            <div class="container">
-                <h2 class="section-title center">Technical Skills</h2>
-
-                <div class="skills-grid">
-                    <div class="skill">
-                        <h4>Languages & Frameworks</h4>
-                        <p>Java, Spring, Spring Boot, Spring MVC, Spring Security, Hibernate, SQL</p>
-                    </div>
-
-                    <div class="skill">
-                        <h4>Databases</h4>
-                        <p>MySQL (schema design, query optimization), Redis (caching)</p>
-                    </div>
-
-                    <div class="skill">
-                        <h4>Tools & Testing</h4>
-                        <p>Git, GitHub, Maven, Jenkins, Postman, JUnit, Mockito, IntelliJ, Eclipse</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section id="experience" class="section animate">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-
-                <div class="timeline">
-
-                    <article class="timeline-item animate">
-                        <h3>Software Engineer — VentureBiz Promotions Private Limited</h3>
-                        <p class="muted">Bengaluru • Nov 2025 – Present</p>
-                        <ul>
-                            <li>Developing and maintaining backend modules using Java, Spring Boot, Spring MVC and REST
-                                APIs.</li>
-                            <li>Designing database tables and optimized queries in MySQL using Hibernate/JPA.</li>
-                            <li>Implementing secure, scalable backend features such as authentication, user management
-                                and data processing.</li>
-                            <li>Ensuring code quality with validation, exception handling, logging and unit testing
-                                (JUnit/Mockito).</li>
-                            <li>Collaborating with cross-functional teams using Agile/Scrum, Git and code reviews.</li>
-                            <li>Optimized performance and reduced API response time using query tuning and Redis
-                                caching.</li>
-                            <li>Implemented Spring Security for role-based authentication and secure backend workflows.
-                            </li>
-                        </ul>
-                    </article>
-
-                    <article class="timeline-item animate">
-                        <h3>Consulting Engineer (Apprenticeship) — Cisco Systems India</h3>
-                        <p class="muted">Bengaluru • Jan 2024 – Jan 2025</p>
-                        <ul>
-                            <li>Developed Spring Boot microservices and REST APIs for lifecycle tracking and
-                                infrastructure migration workflows.</li>
-                            <li>Built backend modules for EOL/EOS validation, asset management and audit automation
-                                using Java & MySQL.</li>
-                            <li>Implemented Hibernate/JPA for CRUD operations, optimized SQL queries and improved API
-                                performance.</li>
-                            <li>Enhanced microservices scalability & reliability by applying distributed service design
-                                patterns.</li>
-                            <li>Added API validation, centralized exception handling and structured logging.</li>
-                            <li>Integrated Git, Maven and Jenkins for CI/CD; wrote JUnit/Mockito tests achieving 80%+
-                                coverage.</li>
-                        </ul>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects" class="section section-alt animate">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="project-card animate">
-                    <h3>Goldman Sachs — IBLM Automation Platform</h3>
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <h3>Java Backend Microservice (Demo)</h3>
                     <p>
-                        Developed Spring Boot microservices for the Goldman Sachs IBLM platform to automate
-                        infrastructure lifecycle,
-                        compliance checks and migration workflows.
+                        Designed a scalable microservice with Spring Boot, JWT authentication,
+                        API gateway routing, and MySQL database integration.
                     </p>
-                    <ul>
-                        <li>Developed Spring Boot microservices for the Goldman Sachs IBLM platform to automate
-                            infrastructure lifecycle,
-                            compliance checks, and migration workflows. </li>
-                        <li>Designed and optimized REST APIs for asset tracking, EOL/EOS validation and audit reporting
-                            — improved API performance by ~40%.</li>
-                        <li>Implemented MySQL schemas and JPA/Hibernate CRUD operations for large-scale asset datasets.
-                        </li>
-                        <li>Built backend modules for automated policy validation, reducing manual effort and ensuring
-                            audit-ready compliance.</li>
-                        <li>Integrated CI/CD pipelines (Git, Maven, Jenkins) and wrote JUnit/Mockito tests achieving
-                            80%+ coverage.</li>
-                    </ul>
                 </div>
 
-                <div class="project-card animate">
-                    <h3>Infrastructure Audit Automation System</h3>
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <h3>Spring Boot CRUD Application (Demo)</h3>
                     <p>
-                        Backend system to automate scheduled audits, validation pipelines and compliance reporting for
-                        infrastructure assets.
+                        Built a role-based CRUD system using Spring Boot, MySQL, Hibernate,
+                        and exception handling + validation layers.
                     </p>
-                    <ul>
-                        <li>Automated validation pipelines to reduce manual audit effort.</li>
-                        <li>Implemented index & SQL optimizations for performance.</li>
-                        <li>Built reporting APIs for analytics and exportable audit reports.</li>
-                        <li>Added centralized exception handling and secure access controls.</li>
-                    </ul>
                 </div>
 
             </div>
         </section>
 
-        <!-- CONTACT -->
-        <section id="contact" class="section animate">
-            <div class="container contact-grid">
-                <div class="contact-left animate">
-                    <h2 class="section-title">Contact <span>Me</span></h2>
-                    <p>If you'd like to collaborate or have an opportunity — feel free to reach out.</p>
-
-                    <ul class="contact-info">
-                        <li><strong>Email:</strong> <a
-                                href="mailto:sujathacsujathac314@gmail.com">sujathacsujathac314@gmail.com</a></li>
-                        <li><strong>Phone:</strong> <a href="tel:+919090990909">+91 90909 90909</a></li>
-                        <li><strong>Location:</strong> Bengaluru, Karnataka</li>
-                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sujatha-c-a75ba425a"
-                                target="_blank">sujatha-c</a></li>
-                    </ul>
-                </div>
-
-                <form id="contactForm" class="contact-form animate" onsubmit="return handleSubmit(event)">
-                    <input id="name" name="name" type="text" placeholder="Full name" required>
-                    <input id="email" name="email" type="email" placeholder="Email address" required>
-                    <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
-
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        <button type="reset" class="btn btn-outline">Clear</button>
-                    </div>
-                </form>
-            </div>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p><b>Phone:</b> +91 8660453377</p>
+            <p><b>Email:</b> sujathacsujathac314@gmail.com</p>
+            <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/sujatha-c-a75ba425a" target="_blank">Visit Profile</a></p>
         </section>
+
     </main>
 
-    <!-- THANK YOU VIEW -->
-    <div id="thankYouView" class="thankyou-view" aria-hidden="true">
-        <div class="thankyou-card animate">
-            <h1>Thank you!</h1>
-            <p>Your message has been sent successfully.</p>
-            <div class="thank-actions">
-                <button class="btn btn-primary" id="backHomeBtn">Back to Home</button>
-            </div>
-
-            <!-- footer inside thankyou page -->
-            <footer class="footer">
-                <div class="footer-container">
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/sujatha-c-a75ba425a" target="_blank"><img
-                                src="./linkedin.png" alt="LinkedIn"></a>
-                        <a href="https://github.com/sujathacsujatha" target="_blank"><img src="github1.jpg"
-                                alt="GitHub"></a>
-                        <a href="mailto:sujathacsujathac314@gmail.com" target="_blank"><img src="./Email Logo.png"
-                                alt="Email"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100023163330322" target="_blank"><img
-                                src="./facebook.png" alt="Facebook"></a>
-                    </div>
-                    <p class="footer-text">© 2025 Sujatha C — All Rights Reserved</p>
-                </div>
-            </footer>
-        </div>
-    </div>
-
-    <!-- Page Footer -->
-    <footer class="footer page-footer animate">
-        <div class="footer-container">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sujatha-c-a75ba425a" target="_blank"><img src="./linkedin.png"
-                        alt="LinkedIn"></a>
-                <a href="https://github.com/sujathacsujatha" target="_blank"><img src="github1.jpg" alt="GitHub"></a>
-                <a href="mailto:sujathacsujathac314@gmail.com" target="_blank"><img src="./Email Logo.png"
-                        alt="Email"></a>
-                <a href="https://www.facebook.com/profile.php?id=100023163330322" target="_blank"><img
-                        src="./facebook.png" alt="Facebook"></a>
-            </div>
-            <p class="footer-text">© 2025 Sujatha C — All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <!-- Back to top -->
-    <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
-
-    <!-- SCRIPTS -->
-    <script>
-        // Back Button
-        function goBack() {
-            if (window.history.length > 1) {
-                window.history.back();
-            } else {
-                window.location.href = "#home";
-            }
-        }
-
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navbar = document.getElementById('navbar');
-        menuToggle && menuToggle.addEventListener('click', () => navbar.classList.toggle('show'));
-
-        // IntersectionObserver for scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('show');
-            });
-        }, { threshold: 0.15 });
-
-        document.querySelectorAll('.animate, .animate-zoom').forEach(el => observer.observe(el));
-
-        // Form handling
-        function handleSubmit(e) {
-            e.preventDefault();
-            document.getElementById('contactForm').reset();
-            document.getElementById('mainContent').style.display = 'none';
-            document.getElementById('thankYouView').style.display = 'flex';
-            document.getElementById('thankYouView').setAttribute('aria-hidden', 'false');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            return false;
-        }
-
-        document.getElementById('backHomeBtn').addEventListener('click', () => {
-            document.getElementById('thankYouView').style.display = 'none';
-            document.getElementById('thankYouView').setAttribute('aria-hidden', 'true');
-            document.getElementById('mainContent').style.display = '';
-            window.location.hash = '#home';
-            document.querySelectorAll('.animate').forEach(el => el.classList.remove('show'));
-            setTimeout(() => { document.querySelectorAll('.animate').forEach(el => observer.observe(el)); }, 200);
-        });
-
-        // Nav link active state
-        const sections = document.querySelectorAll('section[id]');
-        window.addEventListener('scroll', () => {
-            const scrollPos = window.scrollY + 120;
-            sections.forEach(sec => {
-                if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
-                    document.querySelectorAll('.navbar a').forEach(a => a.classList.remove('active'));
-                    const link = document.querySelector('.navbar a[href="#' + sec.id + '"]');
-                    if (link) link.classList.add('active');
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
